@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    transition: 2s;
+}
+
+body{
+    /* background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); */
+    /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
+    /* background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); */
+    background: rgb(4,4,42);
+    background: linear-gradient(180deg, rgba(4,4,42,1) 58%, rgba(0,212,255,1) 100%);
+}
+
+/* 
+.nav-list{
+    background: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+}
+
+
+.nav-list li{
+    width: 50%;
+    padding: 27px ;
+} */
+
+.navbar {
+    background: black;
+    background-image: linear-gradient();
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.nav-list {
+    display: flex;
+    width: 50%;
+    padding: 2px;
+
+}
+
+
+.firsthalf {
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: right;
+    padding: 30vh 50vh;
+    color: rgb(3, 233, 57);
+
+}
+
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+    border: 2px white;
+  }
+  a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+.nav-list li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav-list li a:hover {
+    color: rgb(7, 116, 210);
+}
+
+.nav-list li {
+    padding: 20px 20px;
+    text-align: left;
+}
+
+.rightNav {
+    width: 50%;
+    text-align: right;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+
+.background {
+    /* background: rgba(0, 0, 0, 0.7) url(stock_market.jpg); */
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+.logo {
+    width: 75px;
+    display: flex;
+}
+
+.logo img {
+    width: 80px;
+}
+
+
+.video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video {
+        width: 100%;
+    }
+}
+
+
+.text-big {
+    font-size: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+
+.text-small {
+    font-size: 18px;
+    color: white;
+    left: 100px;
+
+}
+
+
+.btn {
+    padding: 8px 20px;
+    margin: 7px 3px;
+    border: 2px solid;
+    border-radius: 8px;
+    background-color: transparent;
+    color: rgb(3, 233, 57);
+    cursor: pointer;
+
+}
+/* 
+.btn::before{
+    color: white;
+}
+
+
+.btn span {
+    display: inline-block;
+    transition: 0.5s;
+    color: white;
+
+}
+
+.btn span:after {
+    position: absolute;
+    color: white;
+    transition: 0.5s;
+} */
+
+.text {
+    padding-right: 0px;
+    padding-left: 580px;
+    white-space: nowrap;
+
+}
+
+
+.secondsection {
+    height: 100vh;
+    margin: -75px;
+    width: 223.25vh;
+    padding-right: 0px;
+    padding-left: 100px;
+    white-space: normal;
+    /* background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 24%, rgba(0,212,255,1) 100%);} */
+    /* background: black; */
+}
+
+.about {
+    font-size: 60px;
+    padding-top: 75px;
+    color: rgb(3, 233, 57);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about1 {
+    font-size: 20px;
+    margin: 20px;
+    width: 75%;
+    color: rgb(255, 255, 255);
+    padding-left: 100px;
+    padding-right: -100px;
+    word-wrap: break-word;
+}
+
+.line {
+    color: aquamarine;
+}
+
+.wrapper{
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+}
+.collapsible {
+    max-width: 450px;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.collapsible label {
+    position: relative;
+    font-weight: 600;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapsible label:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+    height: 18px;
+    
+}
+
+.collapsible-text{
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.collapsible .collapsible-text{
+    max-height: 300px;
+    padding-bottom: 25px;
+    background: rgba(255, 255, 255, 0.304);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
+    opacity: 1;
+    top: 0;
+}   
+
+.collapsible-text h2{
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color: rgb(3, 233, 57)
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.collapsible-text p{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.thirdsection {
+    height: 325vh;
+    margin: 0;
+    /* background-color: black; */
+    width: 212.8vh;
+}
+
+.faq{
+    font-size: 60px;
+    padding-top: 75px;
+    color: rgb(3, 233, 57);
+}
+
+.fourthsection {
+    height: 35vh;
+    /* background-color: rgba(0, 0, 0, 0.881); */
+}
+
+.contact{
+    padding-left: 42%;
+    font-size: 60px;
+    color: black;
+}
+
+.para {
+    color: white;
+}
+
+
+.social{
+    padding-left: 47%;
+    margin-top: 20px;
+    width: 120px;
+    display: flex;
+    height: 120px;
+}
+
